@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.5)  24 JUL 2023 13:00
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.5)  9 AUG 2023 12:13
  restricted system commands enabled.
 **example.tex
 (./example.tex
@@ -909,12 +909,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 10
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            loader	loadhyph-de-1901.tex on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -2678,12 +2678,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            righthyphenmin	2
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	 on input line 22
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	
+(polyglossia)            loader	loadhyph-de-1996.tex on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 22
 )
@@ -3012,38 +3012,37 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolA/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 179.
+(microtype)             (new value: 12.0pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolA/m/n/8.64'
-(microtype)             (new value: 8.64pt) on input line 179.
+(microtype)             (new value: 8.64pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolA/m/n/6.96'
-(microtype)             (new value: 6.96pt) on input line 179.
+(microtype)             (new value: 6.96pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolB/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 179.
+(microtype)             (new value: 12.0pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolB/m/n/8.64'
-(microtype)             (new value: 8.64pt) on input line 179.
+(microtype)             (new value: 8.64pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolB/m/n/6.96'
-(microtype)             (new value: 6.96pt) on input line 179.
+(microtype)             (new value: 6.96pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolC/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 179.
+(microtype)             (new value: 12.0pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolC/m/n/8.64'
-(microtype)             (new value: 8.64pt) on input line 179.
+(microtype)             (new value: 8.64pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolC/m/n/6.96'
-(microtype)             (new value: 6.96pt) on input line 179.
+(microtype)             (new value: 6.96pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolD/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 179.
+(microtype)             (new value: 12.0pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolD/m/n/8.64'
-(microtype)             (new value: 8.64pt) on input line 179.
+(microtype)             (new value: 8.64pt) on input line 182.
 Package microtype Info: Fixing zero fontdimen6 for font `U/MnSymbolD/m/n/6.96'
-(microtype)             (new value: 6.96pt) on input line 179.
-<plots/all_runs_global_z_vs_Tx.pdf, id=27, 462.528pt x 346.896pt>
-File: plots/all_runs_global_z_vs_Tx.pdf Graphic file (type pdf)
-<use plots/all_runs_global_z_vs_Tx.pdf>
-Package luatex.def Info: plots/all_runs_global_z_vs_Tx.pdf  used on input line 
-179.
-(luatex.def)             Requested size: 229.63257pt x 172.22484pt.
+(microtype)             (new value: 6.96pt) on input line 182.
+<plots/fit_Tx.pdf, id=27, 462.528pt x 346.896pt>
+File: plots/fit_Tx.pdf Graphic file (type pdf)
+<use plots/fit_Tx.pdf>
+Package luatex.def Info: plots/fit_Tx.pdf  used on input line 182.
+(luatex.def)             Requested size: 183.70256pt x 137.77669pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 179.
+Package luatex.def Info: logos/tu.pdf  used on input line 182.
 (luatex.def)             Requested size: 140.30132pt x 22.76271pt.
 
 Overfull \hbox (1.05684pt too wide) has occurred while \output is active
@@ -3052,144 +3051,7 @@ Overfull \hbox (1.05684pt too wide) has occurred while \output is active
 
 [2
 
-<./plots/all_runs_global_z_vs_Tx.pdf>]
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 202.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-
-Overfull \hbox (1.05684pt too wide) has occurred while \output is active
- [][]  
- []
-
-[3
-
-]
-<plots/relative_pos/tx_all_runs_T1U.pdf, id=95, 462.528pt x 346.896pt>
-File: plots/relative_pos/tx_all_runs_T1U.pdf Graphic file (type pdf)
-<use plots/relative_pos/tx_all_runs_T1U.pdf>
-Package luatex.def Info: plots/relative_pos/tx_all_runs_T1U.pdf  used on input 
-line 222.
-(luatex.def)             Requested size: 183.70256pt x 137.77669pt.
-<plots/outfiles_comparison/diff_runs_diff_plots_T1U.pdf, id=96, 462.528pt x 346
-.896pt>
-File: plots/outfiles_comparison/diff_runs_diff_plots_T1U.pdf Graphic file (type
- pdf)
-<use plots/outfiles_comparison/diff_runs_diff_plots_T1U.pdf>
-Package luatex.def Info: plots/outfiles_comparison/diff_runs_diff_plots_T1U.pdf
-  used on input line 222.
-(luatex.def)             Requested size: 183.70256pt x 137.77669pt.
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 222.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-
-Overfull \hbox (1.05684pt too wide) has occurred while \output is active
- [][]  
- []
-
-[4
-
-<./plots/relative_pos/tx_all_runs_T1U.pdf><./plots/outfiles_comparison/diff_runs
-_diff_plots_T1U.pdf>]
-<plots/relative_pos/n_Tracks_T3V.pdf, id=263, 462.528pt x 346.896pt>
-File: plots/relative_pos/n_Tracks_T3V.pdf Graphic file (type pdf)
-<use plots/relative_pos/n_Tracks_T3V.pdf>
-Package luatex.def Info: plots/relative_pos/n_Tracks_T3V.pdf  used on input lin
-e 242.
-(luatex.def)             Requested size: 183.70256pt x 137.77669pt.
-<plots/outfiles_comparison/nTracks_diff_diff_plots_T3V.pdf, id=264, 462.528pt x
- 346.896pt>
-File: plots/outfiles_comparison/nTracks_diff_diff_plots_T3V.pdf Graphic file (t
-ype pdf)
-<use plots/outfiles_comparison/nTracks_diff_diff_plots_T3V.pdf>
-Package luatex.def Info: plots/outfiles_comparison/nTracks_diff_diff_plots_T3V.
-pdf  used on input line 242.
-(luatex.def)             Requested size: 183.70256pt x 137.77669pt.
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 242.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-
-Overfull \hbox (1.05684pt too wide) has occurred while \output is active
- [][]  
- []
-
-[5
-
-<./plots/relative_pos/n_Tracks_T3V.pdf><./plots/outfiles_comparison/nTracks_diff
-_diff_plots_T3V.pdf>]
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
-(Font)              scaled to size 7.33495pt on input line 261.
-LaTeX Font Info:    Font shape `TU/FiraSansLight(0)/m/n' will be
-(Font)              scaled to size 5.9087pt on input line 261.
-<plots/bad_module_Q0M0.pdf, id=431, 693.792pt x 346.896pt>
-File: plots/bad_module_Q0M0.pdf Graphic file (type pdf)
-<use plots/bad_module_Q0M0.pdf>
-Package luatex.def Info: plots/bad_module_Q0M0.pdf  used on input line 261.
-(luatex.def)             Requested size: 276.40605pt x 138.20015pt.
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 261.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-
-Overfull \hbox (1.05684pt too wide) has occurred while \output is active
- [][]  
- []
-
-[6
-
-<./plots/bad_module_Q0M0.pdf>]
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 285.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-
-Overfull \hbox (1.05684pt too wide) has occurred while \output is active
- [][]  
- []
-
-[7
-
-]
-<plots/jointChi2_baseErrors.png, id=488, 369.63094pt x 130.98938pt>
-File: plots/jointChi2_baseErrors.png Graphic file (type png)
-<use plots/jointChi2_baseErrors.png>
-Package luatex.def Info: plots/jointChi2_baseErrors.png  used on input line 304
-.
-(luatex.def)             Requested size: 183.70256pt x 65.10077pt.
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 304.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-
-Overfull \hbox (1.05684pt too wide) has occurred while \output is active
- [][]  
- []
-
-[8
-
-<./plots/jointChi2_baseErrors.png>]
-File: plots/bad_module_Q0M0.pdf Graphic file (type pdf)
-<use plots/bad_module_Q0M0.pdf>
-Package luatex.def Info: plots/bad_module_Q0M0.pdf  used on input line 310.
-(luatex.def)             Requested size: 425.24408pt x 212.62253pt.
-
-Overfull \vbox (27.7453pt too high) detected at line 310
- []
-
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 310.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-
-Overfull \hbox (1.05684pt too wide) has occurred while \output is active
- [][]  
- []
-
-[9
-
-]
+<./plots/fit_Tx.pdf>]
 \tf@nav=\write6
 
 \openout6 = example.nav
@@ -3260,16 +3122,16 @@ Package logreq Info: Writing requests to 'example.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 73517 strings out of 477811
+ 73355 strings out of 477811
  125016,3417909 words of node,token memory allocated
- 2211 words of node memory still in use:
-   41 hlist, 9 vlist, 6 rule, 4 disc, 7 local_par, 55 glue, 18 kern, 21 penalty,
- 1 margin_kern, 34 glyph, 76 attribute, 77 glue_spec, 76 attribute_list, 4 write
-, 14 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
-   avail lists: 1:11,2:517,3:247,4:236,5:422,6:52,7:2190,8:24,9:349,10:15,11:156
-
- 91745 multiletter control sequences out of 65536+600000
- 119 fonts using 39935599 bytes
+ 6985 words of node memory still in use:
+   73 hlist, 10 vlist, 6 rule, 34 disc, 12 local_par, 16 math, 185 glue, 70 kern
+, 52 penalty, 4 margin_kern, 364 glyph, 157 attribute, 77 glue_spec, 157 attribu
+te_list, 4 write, 24 pdf_literal, 20 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save
+, 2 pdf_restore nodes
+   avail lists: 1:10,2:291,3:185,4:227,5:192,6:34,7:1318,8:9,9:312,10:8,11:70
+ 91681 multiletter control sequences out of 65536+600000
+ 117 fonts using 38463439 bytes
  128i,18n,144p,1003b,2454s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/nils/.local/texlive/2021/texmf-dist/fonts/opentype/public/firamath/FiraMa
 th-Regular.otf></home/nils/.local/texlive/2021/texmf-dist/fonts/opentype/public/
@@ -3279,10 +3141,10 @@ nc/dvips/mnsymbol/MnSymbolA.enc}{/home/nils/.local/texlive/2021/texmf-dist/fonts
 ts/opentype/public/fira/FiraSans-Medium.otf></home/nils/.local/texlive/2021/texm
 f-dist/fonts/opentype/public/fira/FiraSans-Light.otf></home/nils/.local/texlive/
 2021/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb>
-Output written on example.pdf (9 pages, 197801 bytes).
+Output written on example.pdf (2 pages, 51863 bytes).
 
-PDF statistics: 540 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 131072)
+PDF statistics: 121 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

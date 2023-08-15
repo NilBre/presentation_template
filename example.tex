@@ -148,11 +148,11 @@
 % \setbeamertemplate{itemize subitem}{\scriptsize$\blacktriangleright$}
 
 %Titel:
-\title{Alignment stability tests and joint constraint analysis}
+\title{RTA update}
 %Autor
 \author[N.Breer]{Nils Breer}
 %Lehrstuhl/Fakultät
-\institute{Faculty Physics}
+\institute{AG Albrecht}
 %Titelgrafik muss ich einfueren!!!
 %\titlegraphic{\includegraphics[width=0.3\textwidth]{content/Bilder/interferenz.jpg}}
 % \date{12.05.2023}
@@ -160,153 +160,25 @@
 \begin{document}
 \maketitle
 
-\begin{frame}\frametitle{Alignment stability}
+\begin{frame}\frametitle{}
   \begin{columns}
-    \begin{column}[c]{0.40\textwidth}
-      \begin{itemize}
-        \item $\bullet$\, How stable is the alignment over several runs/fills?
-        \item $\bullet$\, difference in alignment quality between magnetUp and magnetDown?
-        \item MD: black, blue, red, green
-        \item MU: yellow, magenta, brown, cyan
-      \end{itemize}
-    \end{column}
-    \begin{column}[c]{0.60\textwidth}
-      \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/all_runs_global_z_vs_Tx.pdf}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Config and run info}
-  \begin{columns}
-    \begin{column}[c]{0.48\textwidth}
-      Config used:
-      \begin{itemize}
-        \item $\bullet$\, V10 alignment tag
-        \item $\bullet$\, DoF: TxTzRz
-        \item $\bullet$\, surveyconstraints: data20221115dd4hep
-        \item $\bullet$\, lagrange constraints: ["Tx", "Tz", "Rz",
-        \item "BackLayerModules: FT/T3/X2/HL.*. : Tx Tz Rx Rz"]
-      \end{itemize}
-    \end{column}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-        \item $\bullet$\, runs labeled as Good from EMTF
-        \item $\bullet$\, fill 8489: blue + red
-        \item $\bullet$\, fill 8491: yellow + green + black
-        \item $\bullet$\, fill 8496 magenta + brown + cyan
-      \end{itemize}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{module x translation}
-  \begin{itemize}
-    \item 10 iterations, converged
-    \item left plot: module position in comparison to nominal (maximum of 1mm in Tx is expected)
-    \item right plot: module position compared to 256145
-  \end{itemize}
-  \begin{columns}
-    \begin{column}[c]{0.48\textwidth}
-      \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/relative_pos/tx_all_runs_T1U.pdf}
-      \end{figure}
-    \end{column}
-    \begin{column}[c]{0.48\textwidth}
-      \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/outfiles_comparison/diff_runs_diff_plots_T1U.pdf}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{nTracks}
-  \begin{itemize}
-    \item 10 iterations, converged
-    \item left plot: module position in comparison to nominal (maximum of 1mm in Tx is expected)
-    \item right plot: module position compared to 256145
-  \end{itemize}
-  \begin{columns}
-    \begin{column}[c]{0.48\textwidth}
-      \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/relative_pos/n_Tracks_T3V.pdf}
-      \end{figure}
-    \end{column}
-    \begin{column}[c]{0.48\textwidth}
-      \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/outfiles_comparison/nTracks_diff_diff_plots_T3V.pdf}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}
-  \begin{columns}
-    \begin{column}[c]{0.35\textwidth}
-      \begin{itemize}
-        \item $\bullet$\, 256145, T3V low efficiency in Q0M0
-        \item $\bullet$\, module position vs. hit position being off \to not all hits not registered in the module
-        \item $\bullet$\, is this just a V10 alignment issue or still visible in v7/v8?
-        \item $\bullet$\, Good news: MD and MU runs very comparable
-        \item $\bullet$\, Module positions with $\SI{1}{\milli\m}$ in Tx
-      \end{itemize}
-    \end{column}
-    \begin{column}[c]{0.65\textwidth}
-      \begin{figure}
-        \includegraphics[width=\textwidth]{plots/bad_module_Q0M0.pdf}
-      \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Analysis of joint constraint errors and chi2}
-  \begin{columns}
-    \begin{column}[c]{0.7\textwidth}
-      \begin{itemize}
-        \item long modules not in geometry, half modules joined to mimic "banana shape"
-        \item combination of 2 Alignables \to how realistic are the errors?
-        \item Plan:
+        \item $\bullet$\, working on plotting scripts
+        \item $\bullet$\, experienced same bug as Giulia in options file (constraint not registered) \to test how much impact it has, run new alignments
+        \item $\bullet$\, running more alignments on warm SciFi run 269045 to find the exact uncertainty where $\chi^2 / dof = 1$
         \begin{itemize}
-          \item instead of 1 chi2 value calculated from Cov matrix
-          \item \to\, calculate chi2 value for each DoF separately
-          \item run alignment with different errors and calculate chi2 again
-          \item \to\, tune errors to yield more or less chi2/dof = 1
-          \item at least make sure none really sticks out
+          \item $\bullet$\, Tx first; find the others with respect to Tx
         \end{itemize}
-      \end{itemize}
-    \end{column}
-    \begin{column}[c]{0.3\textwidth}
-      % \begin{figure}
-      %   \includegraphics[width=0.9\textwidth]{plots/bad_module_Q0M0.pdf}
-      % \end{figure}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Analysis of joint constraint errors and chi2}
-  \begin{columns}
-    \begin{column}[c]{0.5\textwidth}
-      \begin{itemize}
-        \item $\bullet$\, Covariance matrix: $1 / \text{errors}^2$ diagonal
-        \item $\bullet$\, $\chi^2 = (pA - pB)^{T} \cdot \text{Cov} \cdot (pA - pB)$
-        \item $\bullet$\, pA, pB: Set of parameters for tophalf- and bottomhalf modules
-        \item $\bullet$\, initial errors: (Tx,Ty,Tz,Rx,Ry,Rz)
-        \item 0.001 0.001 0.001 0.0002 0.0002 0.0002
+        \item $\bullet$\, non-alignment stuff: proceeding correction for flavourphysics students
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/jointChi2_baseErrors.png}
+        \includegraphics[width=0.9\textwidth]{plots/fit_Tx.pdf}
       \end{figure}
     \end{column}
   \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Backup}
-  \begin{figure}
-    \includegraphics[width=\textwidth]{plots/bad_module_Q0M0.pdf}
-  \end{figure}
 \end{frame}
 
 \end{document}

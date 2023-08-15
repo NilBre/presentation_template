@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/example"] 1690185560 "build/example.bcf" "build/example.bbl" "build/example" 1690196425
-  "build/example.bcf" 1690196424 106635 c9f14f75b8f4bddaba282eb14e7fd3c9 "lualatex"
+["biber build/example"] 1691147251 "build/example.bcf" "build/example.bbl" "build/example" 1691576019
+  "build/example.bcf" 1691576018 106635 c9f14f75b8f4bddaba282eb14e7fd3c9 "lualatex"
   (generated)
   "build/example.bbl"
   "build/example.blg"
-["lualatex"] 1690196414 "example.tex" "build/example.pdf" "example" 1690196425
+["lualatex"] 1691576009 "example.tex" "build/example.pdf" "example" 1691576019
   "/etc/fonts/conf.d/10-antialias.conf" 1586167782 225 3629dcc380ac8c5b0306febc33b5667b ""
   "/etc/fonts/conf.d/10-hinting-slight.conf" 1586167782 696 690acea9572bf68b0ef975636002e4f3 ""
   "/etc/fonts/conf.d/10-scale-bitmap-fonts.conf" 1586167782 2228 7bf8b372085774e6cbdae99235624440 ""
@@ -558,25 +558,19 @@
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1646737616 123506 62723ec6172dea317a18fec2ce07f3c0 ""
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc" 1646737616 123936 dc040e51e6277b124cf6fc1187e7c939 ""
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/fonts/otl/lmsans12-regular.luc" 1657530145 123989 4f3b5e033e4edafa19c71c9510a17cdc ""
-  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua" 1690196424 10326 b832cff7913563d8e54f82a5142f9956 "lualatex"
-  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1690196424 5487 7f6f877ae5db79a71bd82cff8ae7a3e8 "lualatex"
+  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua" 1691576018 9984 5b84836062bb51a740979679067bd79f "lualatex"
+  "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1691576018 5317 fb0b5198ebfb0c1d7fae18a2cf346416 "lualatex"
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1678272008 1219062 050ea92d65a716b18d9675f82a5f0415 ""
   "/home/nils/.local/texlive/2021/texmf-var/tex/generic/config/language.dat.lua" 1644097462 17745 7d542c06defa20bf59071cb47dc3d345 ""
   "/home/nils/.local/texlive/2021/texmf-var/web2c/luahbtex/lualatex.fmt" 1644097551 4555510 f2cb939b2e6bec524b98c695bc199369 ""
   "beamerthemetudo.sty" 1690181839 6341 46eeaf849b7e4c03283b638d1aa32a4d ""
-  "build/example.aux" 1690196424 2429 e72eff1aacca060baa40b3575441734b "lualatex"
-  "build/example.bbl" 1690185561 466 ee04f40f768daeed26442158e95aba61 "biber build/example"
-  "build/example.nav" 1690196425 1011 83c4ff004b77303d878240d0bcc95e05 "lualatex"
-  "build/example.run.xml" 1690196424 2454 c5712fb5e4239e37774d01ad02cf1c49 "lualatex"
-  "example.tex" 1690196411 10446 4304927555cb08566057a1268951fe4a ""
+  "build/example.aux" 1691576018 1561 dc45043640eebe6aa36e8634c51f4e55 "lualatex"
+  "build/example.bbl" 1691147252 466 ee04f40f768daeed26442158e95aba61 "biber build/example"
+  "build/example.nav" 1691576018 395 640a03f4d3f0f705896c1d8375ddfa75 "lualatex"
+  "build/example.run.xml" 1691576018 2454 c5712fb5e4239e37774d01ad02cf1c49 "lualatex"
+  "example.tex" 1691575879 5894 a135e5f5cdaf8b5751d589ec04fe366d ""
   "logos/tu.pdf" 1690181839 13157 1c5905f8a3419899042add57a2182b18 ""
-  "plots/all_runs_global_z_vs_Tx.pdf" 1690181839 19814 1b5c56f14828369e65d2909ab82d2ac7 ""
-  "plots/bad_module_Q0M0.pdf" 1690181839 40520 37e681339fd88379d0f5835a80661abd ""
-  "plots/jointChi2_baseErrors.png" 1690183675 18336 bf5c8c761b304bb5362f91e607511f26 ""
-  "plots/outfiles_comparison/diff_runs_diff_plots_T1U.pdf" 1690181839 28497 d76cc072f74312348f9852cba8bdd2d7 ""
-  "plots/outfiles_comparison/nTracks_diff_diff_plots_T3V.pdf" 1690181839 28625 7d9f9f540ddf52860002ee3077fc4d14 ""
-  "plots/relative_pos/n_Tracks_T3V.pdf" 1690181839 27627 2002d642b4156e908b81e24dfd729043 ""
-  "plots/relative_pos/tx_all_runs_T1U.pdf" 1690181839 27547 e7cb792c31c2a67f5230735e529dcc78 ""
+  "plots/fit_Tx.pdf" 1691575975 14634 cdf3e049328d07f850034ec8c92ca876 ""
   (generated)
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua"
   "/home/nils/.local/texlive/2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc"
