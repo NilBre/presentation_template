@@ -1,8 +1,8 @@
-PWD /Users/nibreer/Documents/presentation_template
+PWD /Users/nibreer/Documents/promotion/presentation_template
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/nibreer/Documents/presentation_template/example.tex
+INPUT /Users/nibreer/Documents/promotion/presentation_template/example.tex
 OUTPUT example.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty

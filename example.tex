@@ -148,8 +148,8 @@
 % \setbeamertemplate{itemize subitem}{\scriptsize$\blacktriangleright$}
 
 %Titel:
-\title{Joint constraints for SciFi modules alignment}
-\subtitle{tuning of uncertainties}
+\title{Stability measurement for SciFi modules alignment}
+%\subtitle{tuning of uncertainties}
 %Autor
 \author[N.Breer]{Nils Breer}
 %Lehrstuhl/Fakultät
@@ -160,181 +160,156 @@
 \begin{document}
 \maketitle
 
-\begin{frame}\frametitle{Concept for joint constraint}
+\begin{frame}\frametitle{Dataset and motivation}
   \begin{columns}
-    \begin{column}[c]{0.65\textwidth}
+    \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
         \setlength\itemsep{0em}
-        \item $\bullet$\, Long SciFi modules: slight "banana shape"
-        \item $\bullet$\, Half modules + joints reproduce the real shape
-        \item $\bullet$\, Joints are implemented in the alignment by using a survey constraint (\href{https://gitlab.cern.ch/lhcb/Alignment/-/merge_requests/368}{MR!368})
-        \item $\bullet$\, It constrains  parameters of two alignables A and B to each other with a $chi^2$: $\chi^2 = (p_A - p_B)^T\,V^{-1}\,(p_A - p_B)$
-        \item $\bullet$\, $p_A, p_B$: set of parameters for the half modules
-        \item $\bullet$\, Use common frame (local half module frame)
-        \item $\bullet$\, Errors taken from diagonal covariance matrix \to how realistic? \to tuning needed
-        \item $\bullet$\, No survey available for joints, tuning needed to contol their $\chi^2$
+        \item $\bullet$\, \href{https://twiki.cern.ch/twiki/bin/viewauth/LHCbInternal/CommissioningData2022}{Dataset} contains magUp and magDown sample from 2022 labeled as "good" from EMTF 
+        \item $\bullet$\, Good: > 90\% of datalinks are good
+        \item $\bullet$\, runs from fills: 8489, 8491, 8496
+        \item $\bullet$\, Using V10 Alignment from tag
       \end{itemize}
     \end{column}
-    \begin{column}[c]{0.35\textwidth}
-      \input{joints.tex}
+    \begin{column}[c]{0.48\textwidth}
+      Motivation:
+      \begin{itemize}
+        \setlength\itemsep{0em}
+        \item $\bullet$\, check how much the SciFi moves between runs
+        \begin{itemize}
+          \item $\bullet$\, compare the position of adjecent runs in ascending order from my list of runs
+          \item list of chosen runs: 255949, 256030, 256145, 256159, 256163, 256272, 256278, 256290
+        \end{itemize}
+        \item $\bullet$\, check where the half modules are in their local frame
+      \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Tuning procedure}
+\begin{frame}\frametitle{Module Positions in local half module frame}
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-        \item $\bullet$\, Instead of one $\chi^2$ for whole cov. matrix \to look at the $\chi^2$ for joint parameters (Tx,Ty,Tz,Rx,Ry,Rz)
-        \item $\bullet$\, \href{https://gitlab.cern.ch/lhcb/Alignment/-/blob/master/Alignment/TAlignment/src/AlignChisqConstraintTool.cpp}{AlignChisqConstraintTool.cpp} was modified to  calculate the six $chi^2$ values to the software (MR coming soon)
-        \item $\bullet$\, Tune uncertainties by running an alignment for each change to the respective parameter uncertainty until roughly $\chi^2 / \text{dof} = 1$
-        % \item $\bullet$\, using $\chi^2$ to learn about accuracy of the joint constraint errors
+        \item $\bullet$\, Runs 255949 + 256030 were from fill 8489
+        \item $\bullet$\, Optimal fine timing implemented in 256145 (afterwards)
+        \item $\bullet$\, Positions of other runs compatible (reminder: MU and MD mixed)
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
-      \begin{itemize}
-        \item $\bullet$\, Procedure evaluated with 2023 data (run 269045, warm SciFi) and master from conditions database
-        \item $\bullet$\, Using the Alignment master branch
-      \end{itemize}
       \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/config_joint_constraint.png}
+        \includegraphics[width=0.9\textwidth]{plots/plain_data/raw_data_T1U_Tx.pdf}
       \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Tuning of uncertainty : Tx}
+\begin{frame}\frametitle{Module positions: magUp and magDown in x-direction}
   \begin{columns}
-    \begin{column}[c]{0.4\textwidth}
+    \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-        \item Initial errors:
-        \item Tx,Ty,Tz $[\mu m]$: 1 1 1
-        \item Rx,Ry,Rz [mrad]: 0.2 0.2 0.2
-        \item $\bullet$\, Vary Tx error (starting at 1 $\mu m$) \to run alignment \to calculate $\chi^2 / \text{dof}$, keep every other parameter at nominal!
-        \item \to\, Tx=1 $\mu m$ has $\chi^2$ \approx 13, perform a scan in a range of uncertainties to find the intersection with $\chi^2$ = 1 (black line)
-        % \item intersection (fit): 0.22 $\mu m$ (0.3 $\mu m$ from scanning)
+        \item $\bullet$\, magUp and magDown runs are compatible respectively
+        \item $\bullet$\, Module positions did not change much except for the black and blue runs
       \end{itemize}
-    \end{column}
-    \begin{column}[c]{0.6\textwidth}
-      intersection (fit): 0.22 $\mu m$ (0.3 $\mu m$ from scanning)
-      % When Tx is set, continue with the next parameter and repeat procedure
       \begin{figure}
-        \includegraphics[width=0.8\textwidth]{plots/retest/only_Tx_full_fit.pdf}
+        \includegraphics[width=0.7\textwidth]{plots/plain_data/raw_MU_T1U_Tx.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.7\textwidth]{plots/plain_data/raw_MD_T1U_Tx.pdf}
       \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Tuning of uncertainties : Ty Rx}
+\begin{frame}\frametitle{Difference between runs: Tx}
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
-      obtained uncertainty of Ty: 1.2 $\mu m$
+      \begin{itemize}
+        \item $\bullet$\, Outer module (M4) always worse than the inner modules (a lot less events)
+        \item $\bullet$\, Largest movement: T1VQ1M4 
+        \item $\bullet$\, other layers move a maximum of 200 $\mu m$ in M4, less than 100 $\mu m$ in M0-M3
+      \end{itemize}
       \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/retest/Ty_with_set_Tx_full_fit.pdf}
+        \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_data_T1U_Tx.pdf}
       \end{figure}
     \end{column}
       \begin{column}[c]{0.48\textwidth}
-        obtained uncertainty of Rx: 0.4 mrad
         \begin{figure}
-          \includegraphics[width=0.9\textwidth]{plots/retest/Rx_with_set_TxTy_full_fit.pdf}
+          \includegraphics[width=0.7\textwidth]{plots/stability_plots/diff_reduced_Tx_T1U_Tx.pdf}
+          \includegraphics[width=0.7\textwidth]{plots/stability_plots/diff_reduced_Tx_T1V_Tx.pdf}
         \end{figure}
       \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Tuning of uncertainties : Tz Ry}
+\begin{frame}\frametitle{Difference between runs: Tz}
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
-      obtained uncertainty of Tz: 1.83 $\mu m$
-      \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/retest/Tz_set_TxTzRx_full_fit.pdf}
-      \end{figure}
+      \begin{itemize}
+        \item $\bullet$\, Tz a little worse in performance as expected
+        \item $\bullet$\, similar picture as for Tx
+        \item $\bullet$\, 
+      \end{itemize}  
     \end{column}
     \begin{column}[c]{0.48\textwidth}
-      obtained uncertainty of Ry: 0.44 $\mu \text{rad}$
       \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/retest/everything_set_but_Ry_full_fit.pdf}
+        \includegraphics[width=0.7\textwidth]{plots/stability_plots/diff_reduced_Tz_T1U_Tz.pdf}
       \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Tuning of uncertainty : Rz}
+\begin{frame}%\frametitle{}
   \begin{columns}
-    \begin{column}[c]{0.4\textwidth}
+    \begin{column}[c]{0.9\textwidth}
       \begin{itemize}
-        \item $\bullet$\, In the last step, Rz was tuned
-        \item $\bullet$\, intersection at 0.2 $\text{mrad}$ was already correctly set from nominal
-        \item $\bullet$\, All parameters show good behaviour at the chosen uncertainty
-      \end{itemize}
-    \end{column}
-    \begin{column}[c]{0.6\textwidth}
-      \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/retest/only_Rz_variable_full_fit.pdf}
-      \end{figure}
+        \item $\bullet$\, The change in module position from run to run is a maximum of 100 $\mu m$ for the modules M0 \to M3 in Tx
+        \item $\bullet$\, This is for runs from the same fill, or if there are no big changes between fills
+        \item $\bullet$\, M4 moves at max 400 $\mu m$
+        \item $\bullet$\, there is no visible difference between magUp and magDown polarity
+      \end{itemize}  
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Uncertainty tuning results}
-  final tuned errors: 0.0003 0.0012 0.00183 0.4 0.00044 0.2
-  \begin{table}
-    \centering
-    \begin{tabular}{c | c c || c c}
-      \hline
-      parameter & $\chi^2 / dof$ (befor)e & $\chi^2 / dof$ (after) & uncertainty (before) & uncertainty (after) \\
-      \hline
-      Tx & 13.031 & 0.986  & 1 $\mu m$ & 0.3 $\mu m$ \\
-      Ty & 1.429 & 0.994   & 1 $\mu m$ & 1.2 $\mu m$ \\
-      Tz & 3.368 & 0.933   & 1 $\mu m$ & 1.83 $\mu m$ \\
-      Rx & 4.019 & 1.005   & 0.2 mrad & 0.4 mrad \\
-      Ry & 4.8e-6 & 1.0003 & 0.2 mrad & 0.44 $\mu \text{rad}$ \\
-      Rz & 0.939 & 0.957   & 0.2 mrad & 0.2 mrad \\
-      \hline
-    \end{tabular}
-  \end{table}
-  % \begin{columns}
-  %   \begin{column}[c]{0.48\textwidth}
-  %     \begin{figure}
-  %       \includegraphics[width=0.9\textwidth]{plots/base_chi2.png}
-  %     \end{figure}
-  %   \end{column}
-  %   \begin{column}[c]{0.48\textwidth}
-  %     \begin{figure}
-  %       \includegraphics[width=0.9\textwidth]{plots/best_chi2.png}
-  %     \end{figure}
-  %   \end{column}
-  % \end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{First checks of tracking quantities}
+\begin{frame}\frametitle{Backup}
   \begin{columns}
+    % \begin{itemize}
+    %   \item $\bullet$\, Module movement between runs is at most 200 $\mu m$ at the outer modules (less statistics)
+    %   \item $\bullet$\, often less than 100 $\mu m$ in all other modules
+    %   % \item $\bullet$\, \to we expect the modules to not move more than 100 $\mu m$ on average between runs
+    % \end{itemize}
     \begin{column}[c]{0.48\textwidth}
-      \begin{itemize}
-        \item this does not introduce degradation in performance
-      \end{itemize}
       \begin{figure}
-        \includegraphics[width=0.9\textwidth]{plots/RMSResidualModulescomp_run269045.pdf}
-      \end{figure}
+        \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MU_T1U_Tx.pdf}
+      \end{figure}  
     \end{column}
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
-        \includegraphics[width=0.7\textwidth]{plots/xT1comp_run269045.pdf}
-        \includegraphics[width=0.7\textwidth]{plots/yT1comp_run269045.pdf}
-      \end{figure}
+        \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MU_T1U_Tz.pdf}
+      \end{figure}  
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Next steps}
+\begin{frame}\frametitle{Backup}
   \begin{columns}
-    \begin{column}[c]{0.90\textwidth}
-      \begin{itemize}
-        \item $\bullet$\, Check the effect of different constraints, selections (particles and tracks) on the joints $\chi^2$
-        \item $\bullet$\, Test tuned parameters with online stack setup
-        \item $\bullet$\, We make sure to check the alignment constants before deploying this in data-taking
-      \end{itemize}
+    % \begin{itemize}
+    %   \item $\bullet$\, Module movement between runs is at most 200 $\mu m$ at the outer modules (less statistics)
+    %   \item $\bullet$\, often less than 100 $\mu m$ in all other modules
+    %   % \item $\bullet$\, \to we expect the modules to not move more than 100 $\mu m$ on average between runs
+    % \end{itemize}
+    \begin{column}[c]{0.48\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MD_T1U_Tx.pdf}
+      \end{figure}  
     \end{column}
+      \begin{column}[c]{0.48\textwidth}
+        \begin{figure}
+          \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MD_T1U_Tz.pdf}
+        \end{figure}  
+      \end{column}
   \end{columns}
 \end{frame}
 

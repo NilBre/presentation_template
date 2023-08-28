@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1692204709 "/Users/nibreer/Documents/presentation_template/example.tex" "example.pdf" "example" 1692204709
-  "/Users/nibreer/Documents/presentation_template/example.tex" 1692204708 10563 22c0ae9b4b4ac6fa7537c134c303542d ""
+["pdflatex"] 1692975668 "/Users/nibreer/Documents/promotion/presentation_template/example.tex" "example.pdf" "example" 1692975668
+  "/Users/nibreer/Documents/promotion/presentation_template/example.tex" 1692975667 11119 a381d126601c57a730625b5439d1ebfd ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1136768653 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
@@ -153,8 +153,8 @@
   "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1674862513 2826440 12e4f8963ca5218e025307e00ed9be0b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "example.aux" 1692204709 32 3985256e7290058c681f74d7a3565a19 ""
-  "example.tex" 1692204708 10563 22c0ae9b4b4ac6fa7537c134c303542d ""
+  "example.aux" 1692975668 32 3985256e7290058c681f74d7a3565a19 ""
+  "example.tex" 1692975667 11119 a381d126601c57a730625b5439d1ebfd ""
   (generated)
   "example.log"
   "example.pdf"
