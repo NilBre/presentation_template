@@ -165,22 +165,24 @@
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
         \setlength\itemsep{0em}
-        \item $\bullet$\, \href{https://twiki.cern.ch/twiki/bin/viewauth/LHCbInternal/CommissioningData2022}{Dataset} contains magUp and magDown sample from 2022 labeled as "good" from EMTF 
+        \item $\bullet$\, \href{https://twiki.cern.ch/twiki/bin/viewauth/LHCbInternal/CommissioningData2022}{Dataset} contains magUp and magDown sample from 2022 labeled as "good" from EMTF
         \item $\bullet$\, Good: > 90\% of datalinks are good
         \item $\bullet$\, runs from fills: 8489, 8491, 8496
-        \item $\bullet$\, Using V10 Alignment from tag
+        \item $\bullet$\, V10 Alignment from tag (loose tracking, half module alignment TxRz + Mats, back layer fixed)
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
       Motivation:
       \begin{itemize}
-        \setlength\itemsep{0em}
-        \item $\bullet$\, check how much the SciFi moves between runs
+        \setlength\itemsep{-1em}
+        \item $\bullet$\, How much does the SciFi move between runs?
         \begin{itemize}
           \item $\bullet$\, compare the position of adjecent runs in ascending order from my list of runs
-          \item list of chosen runs: 255949, 256030, 256145, 256159, 256163, 256272, 256278, 256290
+          \item list of randomly chosen runs: 255949, 256030, 256145, 256159, 256163, 256272, 256278, 256290
         \end{itemize}
-        \item $\bullet$\, check where the half modules are in their local frame
+        \item $\bullet$\, check where the half modules are in their
+        local frame
+        \item $\bullet$\, V10 Alignment (loose tracking, half module alignment TxRz + Mats, back layer fixed)
       \end{itemize}
     \end{column}
   \end{columns}
@@ -188,14 +190,15 @@
 
 \begin{frame}\frametitle{Module Positions in local half module frame}
   \begin{columns}
-    \begin{column}[c]{0.48\textwidth}
+    \begin{column}[c]{0.35\textwidth}
       \begin{itemize}
+        \setlength\itemsep{0em}
         \item $\bullet$\, Runs 255949 + 256030 were from fill 8489
         \item $\bullet$\, Optimal fine timing implemented in 256145 (afterwards)
-        \item $\bullet$\, Positions of other runs compatible (reminder: MU and MD mixed)
+        \item $\bullet$\, Positions of other runs compatible (here: MU and MD mixed)
       \end{itemize}
     \end{column}
-    \begin{column}[c]{0.48\textwidth}
+    \begin{column}[c]{0.65\textwidth}
       \begin{figure}
         \includegraphics[width=0.9\textwidth]{plots/plain_data/raw_data_T1U_Tx.pdf}
       \end{figure}
@@ -204,19 +207,21 @@
 \end{frame}
 
 \begin{frame}\frametitle{Module positions: magUp and magDown in x-direction}
+  \begin{itemize}
+    \setlength\itemsep{0em}
+    \item $\bullet$\, magUp (left) and magDown (right) runs are compatible respectively
+    \item $\bullet$\, black, blue: worse timing than other runs
+    \item $\bullet$\, When introducing a different timing: shift of 1 $\mu m$ expected
+  \end{itemize}
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
-      \begin{itemize}
-        \item $\bullet$\, magUp and magDown runs are compatible respectively
-        \item $\bullet$\, Module positions did not change much except for the black and blue runs
-      \end{itemize}
       \begin{figure}
-        \includegraphics[width=0.7\textwidth]{plots/plain_data/raw_MU_T1U_Tx.pdf}
+        \includegraphics[width=0.9\textwidth]{plots/plain_data/raw_MU_T1U_Tx.pdf}
       \end{figure}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
-        \includegraphics[width=0.7\textwidth]{plots/plain_data/raw_MD_T1U_Tx.pdf}
+        \includegraphics[width=0.9\textwidth]{plots/plain_data/raw_MD_T1U_Tx.pdf}
       \end{figure}
     \end{column}
   \end{columns}
@@ -227,7 +232,7 @@
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
         \item $\bullet$\, Outer module (M4) always worse than the inner modules (a lot less events)
-        \item $\bullet$\, Largest movement: T1VQ1M4 
+        \item $\bullet$\, Largest movement: T1VQ1M4
         \item $\bullet$\, other layers move a maximum of 200 $\mu m$ in M4, less than 100 $\mu m$ in M0-M3
       \end{itemize}
       \begin{figure}
@@ -235,6 +240,10 @@
       \end{figure}
     \end{column}
       \begin{column}[c]{0.48\textwidth}
+        \begin{itemize}
+          \item $\bullet$\, removed blue + black for plotting.
+          \item $\bullet$\
+        \end{itemize}
         \begin{figure}
           \includegraphics[width=0.7\textwidth]{plots/stability_plots/diff_reduced_Tx_T1U_Tx.pdf}
           \includegraphics[width=0.7\textwidth]{plots/stability_plots/diff_reduced_Tx_T1V_Tx.pdf}
@@ -249,8 +258,8 @@
       \begin{itemize}
         \item $\bullet$\, Tz a little worse in performance as expected
         \item $\bullet$\, similar picture as for Tx
-        \item $\bullet$\, 
-      \end{itemize}  
+        \item $\bullet$\,
+      \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
@@ -268,12 +277,13 @@
         \item $\bullet$\, This is for runs from the same fill, or if there are no big changes between fills
         \item $\bullet$\, M4 moves at max 400 $\mu m$
         \item $\bullet$\, there is no visible difference between magUp and magDown polarity
-      \end{itemize}  
+      \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Backup}
+  MagUp Tx and Tz module position comparisons
   \begin{columns}
     % \begin{itemize}
     %   \item $\bullet$\, Module movement between runs is at most 200 $\mu m$ at the outer modules (less statistics)
@@ -283,17 +293,18 @@
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
         \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MU_T1U_Tx.pdf}
-      \end{figure}  
+      \end{figure}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
         \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MU_T1U_Tz.pdf}
-      \end{figure}  
+      \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Backup}
+  MagDown Tx and Tz module position comparisons
   \begin{columns}
     % \begin{itemize}
     %   \item $\bullet$\, Module movement between runs is at most 200 $\mu m$ at the outer modules (less statistics)
@@ -303,12 +314,12 @@
     \begin{column}[c]{0.48\textwidth}
       \begin{figure}
         \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MD_T1U_Tx.pdf}
-      \end{figure}  
+      \end{figure}
     \end{column}
       \begin{column}[c]{0.48\textwidth}
         \begin{figure}
           \includegraphics[width=0.9\textwidth]{plots/stability_plots/diff_MD_T1U_Tz.pdf}
-        \end{figure}  
+        \end{figure}
       \end{column}
   \end{columns}
 \end{frame}
