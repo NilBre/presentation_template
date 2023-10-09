@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.1.28)  4 OCT 2023 12:01
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.1.28)  9 OCT 2023 11:39
  restricted system commands enabled.
 **example.tex
 (./example.tex
@@ -870,12 +870,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2 on input line 10
+(polyglossia)            lefthyphenmin	2 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -2601,12 +2601,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2 on input line 22
+(polyglossia)            lefthyphenmin	2 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 22
 )
@@ -2955,54 +2955,54 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 185.
+(microtype)             (new value: 12.0pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/8.64
 '
-(microtype)             (new value: 8.64pt) on input line 185.
+(microtype)             (new value: 8.64pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/6.96
 '
-(microtype)             (new value: 6.96pt) on input line 185.
+(microtype)             (new value: 6.96pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 185.
+(microtype)             (new value: 12.0pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/8.64
 '
-(microtype)             (new value: 8.64pt) on input line 185.
+(microtype)             (new value: 8.64pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/6.96
 '
-(microtype)             (new value: 6.96pt) on input line 185.
+(microtype)             (new value: 6.96pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 185.
+(microtype)             (new value: 12.0pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/8.64
 '
-(microtype)             (new value: 8.64pt) on input line 185.
+(microtype)             (new value: 8.64pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/6.96
 '
-(microtype)             (new value: 6.96pt) on input line 185.
+(microtype)             (new value: 6.96pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/12'
-(microtype)             (new value: 12.0pt) on input line 185.
+(microtype)             (new value: 12.0pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/8.64
 '
-(microtype)             (new value: 8.64pt) on input line 185.
+(microtype)             (new value: 8.64pt) on input line 176.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/6.96
 '
-(microtype)             (new value: 6.96pt) on input line 185.
-<plots/compi/chi2ProbVsMom_comp_looser.pdf, id=38, 569.12625pt x 394.47375pt>
-File: plots/compi/chi2ProbVsMom_comp_looser.pdf Graphic file (type pdf)
-<use plots/compi/chi2ProbVsMom_comp_looser.pdf>
-Package luatex.def Info: plots/compi/chi2ProbVsMom_comp_looser.pdf  used on inp
-ut line 185.
-(luatex.def)             Requested size: 204.11534pt x 141.47473pt.
+(microtype)             (new value: 6.96pt) on input line 176.
+<plots/all_runs_glob_z_vs_local_Rx.pdf, id=38, 462.528pt x 346.896pt>
+File: plots/all_runs_glob_z_vs_local_Rx.pdf Graphic file (type pdf)
+<use plots/all_runs_glob_z_vs_local_Rx.pdf>
+Package luatex.def Info: plots/all_runs_glob_z_vs_local_Rx.pdf  used on input l
+ine 176.
+(luatex.def)             Requested size: 204.11534pt x 153.08992pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 185.
+Package luatex.def Info: logos/tu.pdf  used on input line 176.
 (luatex.def)             Requested size: 140.30132pt x 22.76271pt.
 File: logos/blanco.png Graphic file (type png)
 <use logos/blanco.png>
-Package luatex.def Info: logos/blanco.png  used on input line 185.
+Package luatex.def Info: logos/blanco.png  used on input line 176.
 (luatex.def)             Requested size: 11.89085pt x 22.76271pt.
 File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
 <use logos/lhcb-logo-0121.pdf>
-Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 185.
+Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 176.
 (luatex.def)             Requested size: 37.92323pt x 22.76271pt.
 
 Overfull \hbox (50.87093pt too wide) has occurred while \output is active
@@ -3011,30 +3011,30 @@ Overfull \hbox (50.87093pt too wide) has occurred while \output is active
 
 [2
 
-<./plots/compi/chi2ProbVsMom_comp_looser.pdf>]
-<plots/compi/chi2_per_ndof_comp_looser.pdf, id=90, 569.12625pt x 394.47375pt>
-File: plots/compi/chi2_per_ndof_comp_looser.pdf Graphic file (type pdf)
-<use plots/compi/chi2_per_ndof_comp_looser.pdf>
-Package luatex.def Info: plots/compi/chi2_per_ndof_comp_looser.pdf  used on inp
-ut line 202.
-(luatex.def)             Requested size: 204.11534pt x 141.47473pt.
-<plots/compi/FTResidual_comp_looser.pdf, id=91, 569.12625pt x 394.47375pt>
-File: plots/compi/FTResidual_comp_looser.pdf Graphic file (type pdf)
-<use plots/compi/FTResidual_comp_looser.pdf>
-Package luatex.def Info: plots/compi/FTResidual_comp_looser.pdf  used on input 
-line 202.
-(luatex.def)             Requested size: 204.11534pt x 141.47473pt.
+<./plots/all_runs_glob_z_vs_local_Rx.pdf>]
+<plots/all_runs_glob_z_vs_local_Tx.pdf, id=96, 462.528pt x 346.896pt>
+File: plots/all_runs_glob_z_vs_local_Tx.pdf Graphic file (type pdf)
+<use plots/all_runs_glob_z_vs_local_Tx.pdf>
+Package luatex.def Info: plots/all_runs_glob_z_vs_local_Tx.pdf  used on input l
+ine 191.
+(luatex.def)             Requested size: 204.11534pt x 153.08992pt.
+<plots/all_runs_glob_z_vs_local_Tz.pdf, id=97, 462.528pt x 346.896pt>
+File: plots/all_runs_glob_z_vs_local_Tz.pdf Graphic file (type pdf)
+<use plots/all_runs_glob_z_vs_local_Tz.pdf>
+Package luatex.def Info: plots/all_runs_glob_z_vs_local_Tz.pdf  used on input l
+ine 191.
+(luatex.def)             Requested size: 204.11534pt x 153.08992pt.
 File: logos/tu.pdf Graphic file (type pdf)
 <use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 202.
+Package luatex.def Info: logos/tu.pdf  used on input line 191.
 (luatex.def)             Requested size: 140.30132pt x 22.76271pt.
 File: logos/blanco.png Graphic file (type png)
 <use logos/blanco.png>
-Package luatex.def Info: logos/blanco.png  used on input line 202.
+Package luatex.def Info: logos/blanco.png  used on input line 191.
 (luatex.def)             Requested size: 11.89085pt x 22.76271pt.
 File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
 <use logos/lhcb-logo-0121.pdf>
-Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 202.
+Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 191.
 (luatex.def)             Requested size: 37.92323pt x 22.76271pt.
 
 Overfull \hbox (50.87093pt too wide) has occurred while \output is active
@@ -3043,213 +3043,8 @@ Overfull \hbox (50.87093pt too wide) has occurred while \output is active
 
 [3
 
-<./plots/compi/chi2_per_ndof_comp_looser.pdf><./plots/compi/FTResidual_comp_loos
-er.pdf>]
-<plots/compi/RMSResidualQuarterscomp_choice.pdf, id=185, 569.12625pt x 387.4475
-pt>
-File: plots/compi/RMSResidualQuarterscomp_choice.pdf Graphic file (type pdf)
-<use plots/compi/RMSResidualQuarterscomp_choice.pdf>
-Package luatex.def Info: plots/compi/RMSResidualQuarterscomp_choice.pdf  used o
-n input line 217.
-(luatex.def)             Requested size: 204.11534pt x 138.95482pt.
-<plots/compi/RMSResidualModulescomp_choice.pdf, id=186, 569.12625pt x 387.4475p
-t>
-File: plots/compi/RMSResidualModulescomp_choice.pdf Graphic file (type pdf)
-<use plots/compi/RMSResidualModulescomp_choice.pdf>
-Package luatex.def Info: plots/compi/RMSResidualModulescomp_choice.pdf  used on
- input line 217.
-(luatex.def)             Requested size: 204.11534pt x 138.95482pt.
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 217.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-File: logos/blanco.png Graphic file (type png)
-<use logos/blanco.png>
-Package luatex.def Info: logos/blanco.png  used on input line 217.
-(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
-File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
-<use logos/lhcb-logo-0121.pdf>
-Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 217.
-(luatex.def)             Requested size: 37.92323pt x 22.76271pt.
-
-Overfull \hbox (50.87093pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[4
-
-<./plots/compi/RMSResidualQuarterscomp_choice.pdf><./plots/compi/RMSResidualModu
-lescomp_choice.pdf>]
-<plots/compi/Tx/blue_red_comp_T1U_Tx.pdf, id=281, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T1U_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T1U_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T1U_Tx.pdf  used on input
- line 234.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T1V_Tx.pdf, id=282, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T1V_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T1V_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T1V_Tx.pdf  used on input
- line 234.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T1X1_Tx.pdf, id=283, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T1X1_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T1X1_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T1X1_Tx.pdf  used on inpu
-t line 234.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T1X2_Tx.pdf, id=284, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T1X2_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T1X2_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T1X2_Tx.pdf  used on inpu
-t line 234.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-
-Overfull \vbox (7.38113pt too high) detected at line 234
- []
-
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 234.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-File: logos/blanco.png Graphic file (type png)
-<use logos/blanco.png>
-Package luatex.def Info: logos/blanco.png  used on input line 234.
-(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
-File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
-<use logos/lhcb-logo-0121.pdf>
-Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 234.
-(luatex.def)             Requested size: 37.92323pt x 22.76271pt.
-
-Overfull \hbox (50.87093pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[5
-
-<./plots/compi/Tx/blue_red_comp_T1U_Tx.pdf><./plots/compi/Tx/blue_red_comp_T1V_T
-x.pdf><./plots/compi/Tx/blue_red_comp_T1X1_Tx.pdf><./plots/compi/Tx/blue_red_com
-p_T1X2_Tx.pdf>]
-<plots/compi/Tx/blue_red_comp_T2U_Tx.pdf, id=554, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T2U_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T2U_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T2U_Tx.pdf  used on input
- line 251.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T2V_Tx.pdf, id=555, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T2V_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T2V_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T2V_Tx.pdf  used on input
- line 251.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T2X1_Tx.pdf, id=556, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T2X1_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T2X1_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T2X1_Tx.pdf  used on inpu
-t line 251.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T2X2_Tx.pdf, id=557, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T2X2_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T2X2_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T2X2_Tx.pdf  used on inpu
-t line 251.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-
-Overfull \vbox (7.38113pt too high) detected at line 251
- []
-
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 251.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-File: logos/blanco.png Graphic file (type png)
-<use logos/blanco.png>
-Package luatex.def Info: logos/blanco.png  used on input line 251.
-(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
-File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
-<use logos/lhcb-logo-0121.pdf>
-Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 251.
-(luatex.def)             Requested size: 37.92323pt x 22.76271pt.
-
-Overfull \hbox (50.87093pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[6
-
-<./plots/compi/Tx/blue_red_comp_T2U_Tx.pdf><./plots/compi/Tx/blue_red_comp_T2V_T
-x.pdf><./plots/compi/Tx/blue_red_comp_T2X1_Tx.pdf><./plots/compi/Tx/blue_red_com
-p_T2X2_Tx.pdf>]
-<plots/compi/Tx/blue_red_comp_T3U_Tx.pdf, id=822, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T3U_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T3U_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T3U_Tx.pdf  used on input
- line 268.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T3V_Tx.pdf, id=823, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T3V_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T3V_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T3V_Tx.pdf  used on input
- line 268.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T3X1_Tx.pdf, id=824, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T3X1_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T3X1_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T3X1_Tx.pdf  used on inpu
-t line 268.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-<plots/compi/Tx/blue_red_comp_T3X2_Tx.pdf, id=825, 462.528pt x 346.896pt>
-File: plots/compi/Tx/blue_red_comp_T3X2_Tx.pdf Graphic file (type pdf)
-<use plots/compi/Tx/blue_red_comp_T3X2_Tx.pdf>
-Package luatex.def Info: plots/compi/Tx/blue_red_comp_T3X2_Tx.pdf  used on inpu
-t line 268.
-(luatex.def)             Requested size: 127.57451pt x 95.67987pt.
-
-Overfull \vbox (7.38113pt too high) detected at line 268
- []
-
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 268.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-File: logos/blanco.png Graphic file (type png)
-<use logos/blanco.png>
-Package luatex.def Info: logos/blanco.png  used on input line 268.
-(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
-File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
-<use logos/lhcb-logo-0121.pdf>
-Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 268.
-(luatex.def)             Requested size: 37.92323pt x 22.76271pt.
-
-Overfull \hbox (50.87093pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[7
-
-<./plots/compi/Tx/blue_red_comp_T3U_Tx.pdf><./plots/compi/Tx/blue_red_comp_T3V_T
-x.pdf><./plots/compi/Tx/blue_red_comp_T3X1_Tx.pdf><./plots/compi/Tx/blue_red_com
-p_T3X2_Tx.pdf>] (./T1U_modules.tex)
-File: logos/tu.pdf Graphic file (type pdf)
-<use logos/tu.pdf>
-Package luatex.def Info: logos/tu.pdf  used on input line 272.
-(luatex.def)             Requested size: 140.30132pt x 22.76271pt.
-File: logos/blanco.png Graphic file (type png)
-<use logos/blanco.png>
-Package luatex.def Info: logos/blanco.png  used on input line 272.
-(luatex.def)             Requested size: 11.89085pt x 22.76271pt.
-File: logos/lhcb-logo-0121.pdf Graphic file (type pdf)
-<use logos/lhcb-logo-0121.pdf>
-Package luatex.def Info: logos/lhcb-logo-0121.pdf  used on input line 272.
-(luatex.def)             Requested size: 37.92323pt x 22.76271pt.
-
-Overfull \hbox (50.87093pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[8
-
-]
+<./plots/all_runs_glob_z_vs_local_Tx.pdf><./plots/all_runs_glob_z_vs_local_Tz.pd
+f>]
 \tf@nav=\write6
 
 \openout6 = example.nav
@@ -3320,25 +3115,24 @@ Package logreq Info: Writing requests to 'example.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 73911 strings out of 477785
+ 73507 strings out of 477785
  125016,3417909 words of node,token memory allocated
- 9048 words of node memory still in use:
-   187 hlist, 8 vlist, 7 rule, 2 disc, 6 local_par, 310 glue, 12 kern, 14 penalt
-y, 42 glyph, 715 attribute, 77 glue_spec, 715 attribute_list, 4 write, 408 pdf_l
-iteral, 8 pdf_colorstack, 3 pdf_setmatrix, 3 pdf_save, 3 pdf_restore nodes
-   avail lists: 1:11,2:311,3:881,4:243,5:369,6:47,7:1625,8:9,9:526,10:7,11:36
- 92009 multiletter control sequences out of 65536+600000
- 116 fonts using 38327911 bytes
+ 3024 words of node memory still in use:
+   67 hlist, 10 vlist, 9 rule, 2 disc, 9 local_par, 4 math, 77 glue, 14 kern, 31
+ penalty, 1 margin_kern, 44 glyph, 126 attribute, 77 glue_spec, 126 attribute_li
+st, 4 write, 24 pdf_literal, 12 pdf_colorstack, 5 pdf_setmatrix, 5 pdf_save, 5 p
+df_restore nodes
+   avail lists: 1:9,2:311,3:159,4:234,5:155,6:35,7:895,8:9,9:371,10:3,11:26
+ 91796 multiletter control sequences out of 65536+600000
+ 116 fonts using 38328087 bytes
  128i,18n,144p,1003b,2454s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regu
-lar.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/firamath/FiraM
-ath-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fira/F
-iraSans-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fir
-a/FiraSans-Light.otf>
-Output written on example.pdf (8 pages, 434170 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fira/FiraSans-Medium.o
+tf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fira/FiraSans-Light
+.otf>
+Output written on example.pdf (3 pages, 124673 bytes).
 
-PDF statistics: 1131 PDF objects out of 1200 (max. 8388607)
- 317 compressed objects within 4 object streams
- 17 named destinations out of 1000 (max. 131072)
+PDF statistics: 228 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
