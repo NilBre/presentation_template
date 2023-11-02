@@ -148,7 +148,7 @@
 % \setbeamertemplate{itemize subitem}{\scriptsize$\blacktriangleright$}
 
 %Titel:
-\title{SciFi Alignment Update}
+\title{Global alignment update}
 %\subtitle{tuning of uncertainties}
 %Autor
 \author[N.Breer]{Nils Breer}
@@ -160,51 +160,228 @@
 \begin{document}
 \maketitle
 % \setlength\itemsep{1em}
-\begin{frame}
-  \begin{columns}
-    \begin{column}[c]{0.48\textwidth}
-      \begin{itemize}
-        \item Where we come from: saw a shift in D+D- masses
-        \item Need to understand features in the data (e.g. biases)
-        \item joint uncertainties: 0.01 0.0012 0.0019 0.0004 0.00000047 0.00017 [mm, rad]
-      \end{itemize}
-    \end{column}
-    \begin{column}[c]{0.48\textwidth}
-      \begin{itemize}
-        \item configurations
-      \end{itemize}
-    \end{column}
-  \end{columns}
-\end{frame}
 
 \begin{frame}
   \begin{columns}
     \begin{column}[c]{0.48\textwidth}
       \begin{itemize}
-        \item Where we come from: saw a shift in D+D- masses
-        \item Need to understand features in the data (e.g. biases)
-        \item joint uncertainties: 0.01 0.0012 0.0019 0.0004 0.00000047 0.00017 [mm, rad]
+        \item Tested various configurations for aligning the VELO and the SciFi together
+        \item VELO halves always aligned in "TxTyTzRy"; SciFi aligned in "TxRz(Rx)"
+        \item Here: Reconstruction sequence from the SciFi is used
+        \item Joint constraints used everywhere and set a very small Rx survey uncertainty
+        \item constrain readout side to nominal position of the C-Frame
       \end{itemize}
     \end{column}
     \begin{column}[c]{0.48\textwidth}
+      example called 'v1' here
       \begin{figure}
-        \includegraphics[width=\textwidth]{plots/all_runs_glob_z_vs_local_Tx.pdf}
+        \includegraphics[width=\textwidth]{plots/scenarios.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Alignment configurations}
+  \begin{itemize}
+    \item v1: SciFi (TxRxRz), no SciFi survey
+    \item v2: SciFi (TxRz), no SciFi survey
+    \item v3: SciFi (TxRz), SciFi C-Frames survey
+    \item v4: SciFi (TxRz), SciFi C-Frames survey, constrain (U|V) layer in T2 for Tx Rz
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Global alignment: Tx, Rx vs global z position}
+  mean Tx in [mm], Rx in [rad] of each layer
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{plots/outfiles_vs_global/all_runs_retest_glob_z_vs_local_Tx.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{plots/outfiles_vs_global/all_runs_retest_glob_z_vs_local_Rx.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Global alignment: Ty, Ry vs global z position}
+  mean Ty in [mm], Ry in [rad] of each layer
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{plots/outfiles_vs_global/all_runs_retest_glob_z_vs_local_Ty.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{plots/outfiles_vs_global/all_runs_retest_glob_z_vs_local_Ry.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Global alignment: Tz, Rz vs global z position}
+  mean Tz in [mm], Rz in [rad] of each layer
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{plots/outfiles_vs_global/all_runs_retest_glob_z_vs_local_Tz.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{plots/outfiles_vs_global/all_runs_retest_glob_z_vs_local_Rz.pdf}
       \end{figure}
     \end{column}
   \end{columns}
 \end{frame}
 
 \begin{frame}
+  \begin{itemize}
+    \item without aligning Rx there will be a non-zero Rx; maximum 0.4 mrad
+    \item visible but small z-rotation across stations
+    \item Tx constraint in v4 shifted everything closer to zero but didn't solve the problem for Tx behaviour
+    \item Ty worse when NOT aligning for Rx \to joint constraint or C-Frame survey cannot correct for that
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Comparison VELO only vs global constants}
   \begin{columns}
-    \begin{column}[c]{0.48\textwidth}
+    \begin{column}[c]{0.5\textwidth}
       \begin{figure}
-        \includegraphics[width=\textwidth]{plots/all_runs_glob_z_vs_local_Rx.pdf}
+        \includegraphics[width=\textwidth]{plots/velo_constants.pdf}
       \end{figure}
     \end{column}
-    \begin{column}[c]{0.48\textwidth}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{itemize}
+        \item dots: left velo half; crosses: right velo half
+        \item v1 \to v4 nearly identical (on top of each other)
+        \item difference between VELO only and from the global alignment: 3.5 $\mu m$
+        \item \to is this withing the VELO acceptance or is 3.5 $\mu m$ problematic?
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{T1 SciFi module constants in global: x vs y}
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
       \begin{figure}
-        \includegraphics[width=\textwidth]{plots/all_runs_glob_z_vs_local_Tz.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT1U.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT1V.pdf}
       \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT1X1.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT1X2.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{T2 SciFi module constants in global: x vs y}
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT2U.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT2V.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT2X1.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT2X2.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{T3 SciFi module constants in global: x vs y}
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT3U.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT3V.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT3X1.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_zT3X2.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{T1 SciFi module constants in local: x vs y}
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T1U.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T1V.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T1X1.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T1X2.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{T2 SciFi module constants in local: x vs y}
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T2U.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T2V.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T2X1.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T2X2.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{T3 SciFi module constants in local: x vs y}
+  \begin{columns}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T3U.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T3V.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T3X1.pdf}
+        \includegraphics[width=0.61\textwidth]{plots/out_x_y_pos/retest_x_vs_y_local_T3X2.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{module edge difference in y direction}
+  \begin{columns}
+    \begin{column}[c]{0.6\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.5\textwidth]{plots/out_x_y_pos/retest_global_alignT1U.pdf}
+        \includegraphics[width=0.5\textwidth]{plots/out_x_y_pos/retest_global_alignT1X1.pdf}
+      \end{figure}
+    \end{column}
+    \begin{column}[c]{0.4\textwidth}
+      \begin{itemize}
+        \item dots: middle edge of top half module, cross: middle edge of bottom half module
+        \item joints uncertainties: 0.01 0.0012 0.0019 0.0004 0.0002 0.00017
+        \item \to half modules fairly close everywhere, but T1UQ0M0
+        \item T1X1: Q1 is drifting from Q3
+      \end{itemize}
     \end{column}
   \end{columns}
 \end{frame}
