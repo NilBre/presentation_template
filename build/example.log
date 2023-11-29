@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.5)  1 NOV 2023 14:59
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2022.2.5)  29 NOV 2023 11:27
  restricted system commands enabled.
 **example.tex
 (./example.tex
@@ -909,12 +909,12 @@ braces):
 >  {german/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {german/Localnumeral}  =>  {polyglossia@C@localnumeral}.
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
+(polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt on input line 10
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	 on input line 10
 Module polyglossia Info: Language german was not yet loaded; created with id 2 o
 n input line 10
 Package polyglossia Info: Option: German, spelling=new.
@@ -2678,12 +2678,12 @@ LaTeX Info: Redefining \rmfamily on input line 22.
 LaTeX Info: Redefining \sffamily on input line 22.
 LaTeX Info: Redefining \ttfamily on input line 22.
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
+(polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt on input line 22
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	 on input line 22
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 4 
 on input line 22
 )
@@ -3684,9 +3684,9 @@ Here is how much of LuaTeX's memory you used:
  47 penalty, 3 margin_kern, 276 glyph, 164 attribute, 77 glue_spec, 164 attribut
 e_list, 4 write, 24 pdf_literal, 22 pdf_colorstack, 5 pdf_setmatrix, 5 pdf_save,
  5 pdf_restore nodes
-   avail lists: 1:11,2:311,3:191,4:231,5:242,6:34,7:1471,8:9,9:350,10:17,11:132
+   avail lists: 1:11,2:311,3:191,4:226,5:246,6:34,7:1473,8:9,9:350,10:17,11:132
  91922 multiletter control sequences out of 65536+600000
- 117 fonts using 38463351 bytes
+ 117 fonts using 38463703 bytes
  128i,18n,144p,1003b,2454s stack positions out of 5000i,500n,10000p,200000b,80000s
 </home/nils/.local/texlive/2021/texmf-dist/fonts/opentype/public/firamath/FiraMa
 th-Regular.otf>{/home/nils/.local/texlive/2021/texmf-dist/fonts/enc/dvips/mnsymb
@@ -3694,7 +3694,7 @@ ol/MnSymbolA.enc}</home/nils/.local/texlive/2021/texmf-dist/fonts/opentype/publi
 c/fira/FiraSans-Medium.otf></home/nils/.local/texlive/2021/texmf-dist/fonts/open
 type/public/fira/FiraSans-Light.otf></home/nils/.local/texlive/2021/texmf-dist/f
 onts/type1/public/mnsymbol/MnSymbol12.pfb>
-Output written on example.pdf (15 pages, 803006 bytes).
+Output written on example.pdf (15 pages, 803043 bytes).
 
 PDF statistics: 2531 PDF objects out of 2984 (max. 8388607)
  489 compressed objects within 5 object streams
